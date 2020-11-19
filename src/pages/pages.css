@@ -1,0 +1,29 @@
+.col2{
+    padding-top: 120px;
+    padding-right:100px;
+    padding-bottom: 100px;
+    padding-left: 130px;
+  }
+  
+  .col3 {
+    padding-top: 120px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    padding-left: 180px;
+  }
+
+
+  .col {
+    padding-top: 160px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    padding-left:40px;
+  }
+  
+  
+  .col1{
+    padding-top: 120px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+  }

@@ -1,11 +1,19 @@
 import React, { Fragment } from "react";
-
+import logo from '../illustration/signup.svg';
+import './pages.css';
+import { Link } from "react-router-dom";
 
 export default function Registration() {
     return (
         <Fragment>
             <div className="Regis">
-                <form>
+            <div className="row">
+                <div className="col2">
+                    <img src={logo} className="logo" alt="ilustrasi login"/>
+                    <h1 className="heading1">JOIN US!</h1>
+            </div>
+            <div className="col3">
+            <form>
                 <h3 className="heading3">Registration</h3>
                     <div className="form-row">
                         <div className="form-group col-md-6">
@@ -46,12 +54,19 @@ export default function Registration() {
                             <button type="submit" className="btn btn-primary">Register</button>
                             <small className="form-text text-muted">
                                 Already have an account? 
-                                <a href="default.asp" target="_blank"> Sign in.</a>
+                                <Link to ="/"> Sign in.</Link>
                             </small>
                         </div>
                     </div>
                 </form>
-            </div>
+          </div>
+        </div>
+                <footer className="page-footer font-small blue">
+                    <div className="footer-copyright text-center py-3">
+                        Copyright © FE-BE 07 2020 
+                    </div>
+                </footer>
+        </div>
         </Fragment>
     )
 }
