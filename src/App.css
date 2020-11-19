@@ -2,18 +2,10 @@
   background-color:white;
   min-height: 100vh;
   color: black;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -30,13 +22,8 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control{
+  border-radius: 27px;
 }
 
 
@@ -50,7 +37,7 @@
 
 .col1{
   padding-top: 130px;
-  padding-right: 30px;
+  padding-right: 300px;
   padding-bottom: 50px;
   padding-left: 1px;
 }
@@ -62,16 +49,11 @@
   padding-left: 2px;
 }
 
-.col3{
-  padding-top: 60px;
-  padding-right: 30px;
-  padding-bottom: 70px;
-  padding-left: 1px;
-}
+
 
 
 .btn {
-  background-color: #004f97; /* Green */
+  background-color: #004f97; 
   border: none;
   color: white;
   width: 100%;
@@ -79,9 +61,29 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  
+  border-radius: 27px;
 }
 
+
 .button{
-  padding-top:33px;
+  margin-top: 33px;
+}
+
+
+.heading1{
+  font-family: 'Montserrat', sans-serif;
+  color: #f37024;
+}
+
+
+.heading3{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #f37024;
+}
+
+
+.BRImo{
+  font-family: 'Montserrat', sans-serif;
+  color: #004f97;
 }

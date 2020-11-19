@@ -7,7 +7,7 @@ export default function Login() {
             <div className="Login">
             <form style= {{width:"100%"}}>
                 <div className="form-group">
-                    <h2 className="text-center">Login</h2>
+                    <h3 className="heading3">Login</h3>
                     <label for="username">Username</label>
                     <input 
                         type="username" 
@@ -24,10 +24,15 @@ export default function Login() {
                         id="password"
                         placeholder = "Enter Password"
                     />
-                    <small className="form-text text-muted">Forgot Password?</small>
+                    <small>
+                        <a href="default.asp" target="_blank">Forgot Password?</a>
+                    </small>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
-                <small className="form-text text-muted">Don't Have An Account? Sign Up.</small>
+                <small className="form-text text-muted">
+                    Don't have an account?
+                    <a href="default.asp" target="_blank"> Sign up.</a>
+                </small>
             </form>
             </div>
         </Fragment>

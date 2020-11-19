@@ -6,7 +6,7 @@ export default function Registration() {
         <Fragment>
             <div className="Regis">
                 <form>
-                <h2 className="text-center">Registration</h2>
+                <h3 className="heading3">Registration</h3>
                     <div className="form-row">
                         <div className="form-group col-md-6">
                             <label for="inputEmail">Email</label>
@@ -44,7 +44,10 @@ export default function Registration() {
                         </div>
                         <div className="button col-md-6">
                             <button type="submit" className="btn btn-primary">Register</button>
-                            <small className="form-text text-muted">Already Have An Account? Sign In.</small>
+                            <small className="form-text text-muted">
+                                Already have an account? 
+                                <a href="default.asp" target="_blank"> Sign in.</a>
+                            </small>
                         </div>
                     </div>
                 </form>
