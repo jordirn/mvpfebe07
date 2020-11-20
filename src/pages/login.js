@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../illustration/login.svg';
 import './pages.css';
-
+import ComplaintPage from './complaintpage.js'
 
 export default function Login() {
     return (
@@ -44,7 +44,7 @@ export default function Login() {
                             </small>
                         </form>
                     </div>
-          
+                     <ComplaintPage/>
                 </div>
 
                 <footer className="page-footer font-small blue">
