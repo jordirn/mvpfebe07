@@ -3,6 +3,7 @@
 }
 
 .col1{
+  border: 1px solid black;
     padding-top: 80px;
     padding-right: 100px;
     padding-bottom: 100px;
@@ -11,6 +12,7 @@
 
 
 .col2{
+  border: 1px solid black;
     padding-top: 120px;
     padding-right:100px;
     padding-bottom: 100px;
@@ -18,39 +20,37 @@
   }
   
   .col3 {
+    border: 1px solid black;
     padding-top: 120px;
     padding-right: 100px;
     padding-bottom: 200px;
     padding-left: 180px;
   }
 
+  .col4 {
+    border: 1px solid black;
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    padding-left:100px;
+  }
 
   .col5 {
+    border: 1px solid black;
     padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 50px;
     padding-left:80px;
   }
 
-
   .col6 {
+    border: 1px solid black;
     padding-top: 0px;
     padding-right: 100px;
     padding-bottom: 10px;
     padding-left:120px;
   }
   
-
-
-
-  .col4 {
-    padding-top: 80px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-    padding-left:100px;
-  }
-  
-
   #complaint{
     width: 50%;
     align-items: center;
@@ -62,13 +62,15 @@
     padding-top:35px;
   }
 
-
   #logoBRI{
     width:100px;
   }
-
 
   #Navbar{
     background-color: #004f97;
   }
   
+  .container{
+    display: flex;
+    border: 1px solid black;
+  }

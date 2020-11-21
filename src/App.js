@@ -6,6 +6,8 @@ import ComplaintPage from './pages/complaintpage.js'
 import ListComplaint from './pages/listcomplaint.js'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RegistrationCustomerService from './pages/registrationcs';
+import DataCS from './pages/datacs';
+import DataCS2 from './pages/datacs2';
 
 function App () {
  
@@ -17,6 +19,8 @@ function App () {
         <Route path="/complaintpage" component={ComplaintPage} />
         <Route path="/listcomplaint" component={ListComplaint} />
         <Route path="/registrationcs" component={RegistrationCustomerService} />
+        <Route path="/datacs" component={DataCS} />
+        <Route path="/datacs2" component={DataCS2} />
     <div className="App">
      
       <footer className="page-footer font-small blue">
