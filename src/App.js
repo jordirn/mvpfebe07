@@ -5,6 +5,7 @@ import Registration from './pages/registration.js'
 import ComplaintPage from './pages/complaintpage.js'
 import ListComplaint from './pages/listcomplaint.js'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import RegistrationCustomerService from './pages/registrationcs';
 
 function App () {
  
@@ -15,6 +16,7 @@ function App () {
         <Route path="/registration" component={Registration} />
         <Route path="/complaintpage" component={ComplaintPage} />
         <Route path="/listcomplaint" component={ListComplaint} />
+        <Route path="/registrationcs" component={RegistrationCustomerService} />
     <div className="App">
      
       <footer className="page-footer font-small blue">
