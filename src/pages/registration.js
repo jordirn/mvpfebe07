@@ -128,7 +128,7 @@ export default function Registration() {
                             />
                         </div>
                         <div className="button col-md-6">
-                            <button type="submit" className="btn btn-primary"
+                            <button className="btn btn-primary"
                             onClick={klikRegister}
                             >Register</button>
                             <small className="form-text text-muted">

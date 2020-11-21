@@ -2,8 +2,12 @@
   border-radius: 9px;
 }
 
+.col{
+  width: 500px;
+}
+
 .col1{
-  border: 1px solid black;
+  /* border: 1px solid black; */
     padding-top: 80px;
     padding-right: 100px;
     padding-bottom: 100px;
@@ -12,7 +16,7 @@
 
 
 .col2{
-  border: 1px solid black;
+  /* border: 1px solid black; */
     padding-top: 120px;
     padding-right:100px;
     padding-bottom: 100px;
@@ -20,7 +24,7 @@
   }
   
   .col3 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 120px;
     padding-right: 100px;
     padding-bottom: 200px;
@@ -28,7 +32,7 @@
   }
 
   .col4 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 80px;
     padding-right: 20px;
     padding-bottom: 80px;
@@ -36,7 +40,7 @@
   }
 
   .col5 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 0px;
     padding-right: 20px;
     padding-bottom: 50px;
@@ -44,9 +48,31 @@
   }
 
   .col6 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 0px;
     padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left:120px;
+  }
+
+  .col7 {
+    /* border: 1px solid black; */
+    padding-top: 0px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left:120px;
+    margin-left: 100px;
+  }
+
+  .col8 {
+    border: 1px solid black;
+  }
+
+
+  .form {
+    /* border: 1px solid black; */
+    padding-top: 0px;
+    padding-right: 200px;
     padding-bottom: 10px;
     padding-left:120px;
   }
@@ -69,8 +95,42 @@
   #Navbar{
     background-color: #004f97;
   }
-  
+ 
   .container{
     display: flex;
+    /* border: 1px solid black; */
+  }
+
+  #imgfp{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .akuncs1{
     border: 1px solid black;
+  }
+
+  #spasi{
+    margin-top: 10px;
+  }
+
+  #margindatacs{
+    margin-top: 40px;
+    /* border: 1px solid black; */
+  }
+
+  #datacs{
+    margin: auto;
+  }
+
+  #paddingleft{
+    padding-left: 20px;
+    font-weight: bold;
+  }
+
+  #marginbot{
+    padding-bottom: 30px;
+    font-weight: bold;
+    color:  #f37024;
   }

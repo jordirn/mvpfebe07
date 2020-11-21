@@ -6,7 +6,11 @@ import ComplaintPage from './pages/complaintpage.js'
 import ListComplaint from './pages/listcomplaint.js'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RegistrationCustomerService from './pages/registrationcs';
+import RegistrationSupervisor from './pages/registrationspv';
 import DataCS from './pages/datacs';
+import ListTiketSpv from './pages/listtiketspv';
+import LihatTiket from './pages/lihattiket';
+import ListAkunCs from './pages/listakuncs';
 import DataCS2 from './pages/datacs2';
 
 function App () {
@@ -19,7 +23,11 @@ function App () {
         <Route path="/complaintpage" component={ComplaintPage} />
         <Route path="/listcomplaint" component={ListComplaint} />
         <Route path="/registrationcs" component={RegistrationCustomerService} />
+        <Route path="/registrationspv" component={RegistrationSupervisor} />
         <Route path="/datacs" component={DataCS} />
+        <Route path="/listtiketspv" component={ListTiketSpv} />
+        <Route path="/lihattiket" component={LihatTiket} />
+        <Route path="/listakuncs" component={ListAkunCs} />
         <Route path="/datacs2" component={DataCS2} />
     <div className="App">
      

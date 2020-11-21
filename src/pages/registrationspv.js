@@ -1,11 +1,9 @@
 import React, { Fragment, useState } from "react";
 import logo from '../illustration/signup.svg';
-import logo1 from '../illustration/logoBRI.png';
-import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 
-const RegistrationCustomerService = () => {
+const RegistrationSupervisor = () => {
 
     const [realname, setRealname] = useState('');
     const [fakename, setFakename] = useState('');
@@ -40,12 +38,7 @@ const RegistrationCustomerService = () => {
     return (
         <Fragment>
             <div className="Regis">
-                <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
-                    <Link to="/complaintpage" className="navbar-brand">
-                        <img src={logo1} id="logoBRI" alt="Login"></img>
-                    </Link>
-                </nav>
-                <div className="container mt-5">
+                <div className="container">
                     <form style={{ width: "100%" }}>
                         <div className="row">
                             <div className="col1">
@@ -53,7 +46,7 @@ const RegistrationCustomerService = () => {
                             </div>
                             <div className="col">
                                 <div className="form-group">
-                                    <h3 className="heading3" id="marginbot">Customer Service Registration</h3>
+                                    <h3 className="heading3">Supervisor Registration</h3>
                                     <label htmlFor="RealName">Real Name</label>
                                     <input
                                         type="text"
@@ -104,4 +97,4 @@ const RegistrationCustomerService = () => {
     )
 }
 
-export default RegistrationCustomerService
+export default RegistrationSupervisor

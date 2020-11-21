@@ -1,7 +1,8 @@
 import React, { Fragment, } from "react";
 import './pages.css';
-import logo from '../illustration/login.svg';
+import logo from '../illustration/a.jpg';
 import { Link } from "react-router-dom";
+import logo1 from '../illustration/logoBRI.png';
 
 export default function DataCS() {
 
@@ -63,7 +64,18 @@ export default function DataCS() {
     return (
         <Fragment>
             <div className="datacs">
-                <div className="container">
+                <nav class="navbar navbar-expand-lg navbar-dark" id="Navbar">
+                        <img src={logo1} id="logoBRI" alt="Login"></img>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav" id="paddingleft">
+                            <Link to="/listakuncs" class="nav-item nav-link active">Home</Link>
+                        </div>
+                    </div>
+                </nav>
+                <div className="container" id="margindatacs">
+                    <h3 className="heading3" id="datacs">Data Costumer Service</h3>
+                </div>
+                <div className="container" id="margindatacs">
                     <div className="row">
                         <div className="card-group">
                             <div className="card-text-center">
@@ -133,8 +145,8 @@ export default function DataCS() {
                             <div className="col7">
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Foto Profile</h5>
-                                    <img src={logo} width="300px" />
-                                    </div>
+                                    <img src={logo} id="imgfp" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +155,7 @@ export default function DataCS() {
                     <input class="btn btn-success" type="button" value="Active" />
                     <input class="btn btn-danger" type="button" value="Non-Active" />
                     <input class="btn btn-dark" type="button" value="Delete Account" />
-                    <input class="btn btn-primary" type="submit" value="Save" />
+                    <a href="/listakuncs" class="btn btn-primary" type="submit" >Save</a>
                 </div>
             </div>
         </Fragment>
