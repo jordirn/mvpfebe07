@@ -19,10 +19,9 @@ export default function ListTiketSpv() {
           </div>
         </div>
       </nav>
-
       <div class="container">
         <div class="row">
-          <div class="col5">
+          <div class="col">
             <table class="table">
               <thead class="thead-dark">
                 <tr>
@@ -34,34 +33,33 @@ export default function ListTiketSpv() {
                   <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                     <label class="form-check-label" for="defaultCheck1">
                       Layanan Perbankan
-        </label>
+                    </label>
                   </th>
-
                 </tr>
                 <tr>
                   <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                     <label class="form-check-label" for="defaultCheck1">
                       Internet Banking
-        </label></th>
+                    </label>
+                  </th>
                 </tr>
                 <tr>
                   <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                     <label class="form-check-label" for="defaultCheck1">
                       Mobile Banking
-        </label></th>
+                    </label>
+                  </th>
                 </tr>
                 <tr>
                   <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                     <label class="form-check-label" for="defaultCheck1">
                       Others
-        </label></th>
+                    </label>
+                  </th>
                 </tr>
               </tbody>
             </table>
           </div>
-
-
-
           <div class="col6">
             <table class="table">
               <thead class="thead-dark">
@@ -79,7 +77,7 @@ export default function ListTiketSpv() {
                   <td>111</td>
                   <td>On Progress</td>
                   <td>27/11/2020 16:32</td>
-                  <td><Link to ="/lihattiket" type="button" class="btn btn-secondary">Open</Link>
+                  <td><Link to="/lihattiket" type="button" class="btn btn-secondary">Open</Link>
                   </td>
                 </tr>
                 <tr>

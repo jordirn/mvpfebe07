@@ -36,19 +36,17 @@ export default function LihatTiket() {
 
     return (
         <Fragment>
-
-<nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
-        <Link to="/complaintpage" className="navbar-brand">
-          <img src={logo1} id="logoBRI" alt="Login"></img>
-        </Link>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav" id="marginleft">
-            <Link to="/listtiketspv" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
-            <Link to="" className="nav-item nav-link">History</Link>
-          </div>
-        </div>
-      </nav>
-
+            <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
+                <Link to="/complaintpage" className="navbar-brand">
+                    <img src={logo1} id="logoBRI" alt="Login"></img>
+                </Link>
+                <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav" id="marginleft">
+                        <Link to="/listtiketspv" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
+                        <Link to="" className="nav-item nav-link">History</Link>
+                    </div>
+                </div>
+            </nav>
             <div className="container">
                 <div className="Login">
                     <div className="row">
@@ -73,22 +71,22 @@ export default function LihatTiket() {
                                 <div className="list-group-item disabled" aria-disabled="true">
                                     <label htmlFor="problem">Problem</label>
                                     <textarea class="form-control" id="problem" rows="10"
-                                    value={problem}
-                                    onChange={changeProblem}
-                                    placeholder=""  
+                                        value={problem}
+                                        onChange={changeProblem}
+                                        placeholder=""
                                     />
                                 </div>
                                 <div className="list-group-item">
                                     <label htmlFor="reply">Reply</label>
                                     <textarea class="form-control" id="reply" rows="10"
-                                    value={reply}
-                                    onChange={changeReply} 
+                                        value={reply}
+                                        onChange={changeReply}
                                     />
                                 </div>
                                 <button type="button" onClick={klikReply} className="btn btn-primary">Reply</button>
                             </form>
                         </div>
-                                <RatingCustomerToCS/>
+                        <RatingCustomerToCS />
 
                     </div>
 

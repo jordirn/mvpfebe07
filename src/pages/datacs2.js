@@ -9,29 +9,29 @@
 //           super(props);
 //           this.state = {file: '',imagePreviewUrl: ''};
 //         }
-      
+
 //         _handleSubmit(e) {
 //           e.preventDefault();
 //           // TODO: do something with -> this.state.file
 //           console.log('handle uploading-', this.state.file);
 //         }
-      
+
 //         _handleImageChange(e) {
 //           e.preventDefault();
-      
+
 //           let reader = new FileReader();
 //           let file = e.target.files[0];
-      
+
 //           reader.onloadend = () => {
 //             this.setState({
 //               file: file,
 //               imagePreviewUrl: reader.result
 //             });
 //           }
-      
+
 //           reader.readAsDataURL(file)
 //         }
-      
+
 //         render() {
 //           let {imagePreviewUrl} = this.state;
 //           let $imagePreview = null;
@@ -40,7 +40,7 @@
 //           } else {
 //             $imagePreview = (<div className="previewText">Please select an Image for Preview</div>);
 //           }
-      
+
 //           return (
 //             <div className="previewComponent">
 //               <form onSubmit={(e)=>this._handleSubmit(e)}>
@@ -58,7 +58,7 @@
 //           )
 //         }
 //       }
-        
+
 //       ReactDOM.render(<ImageUpload/>, document.getElementById("mainApp"));
 
 //   export default DataCS2;
@@ -154,7 +154,7 @@
 // //                                 <div className="form-group">
 // //                                     <label htmlFor="File1">Upload Real Photo</label>
 // //                                     <input type="file" className="form-control-file" id="File1"
-                                   
+
 // //                                     />
 // //                                 </div>
 // //                                 <div className="form-group">
@@ -170,3 +170,67 @@
 // //         </Fragment>
 // //     )
 // // }
+
+import React, { Component } from 'react';
+Image axios from 'axios';
+
+
+class App extends Component{
+
+    state = {
+        file:null
+    }
+
+    handleFile(e){
+
+        let file=e.target.files[0]
+
+        this.setState({file: file})
+
+    }
+
+    handleUpload(e){
+
+        let file = this.state.file
+
+        let formdata =  new FormData()
+
+        formdata.append('image', file)
+        formdata.append('name', "Jordie")
+
+        axios({
+            url: '/some/api',
+            method: "POST",
+            headers:{
+                authorization: 'your token'
+            },
+            data: formdata
+        }).then((res)=>{
+
+        },(err)=>{
+
+        }
+    )
+
+    }
+
+    render(){
+        return(
+            <div className="App">
+
+            <h1>THE FORM</h1>
+
+            <form>
+            <div className="">
+                <label>Select File</label>
+                <input type="file" name="file" onChange={(e)=>this.handleFile(e)}/>
+            </div>
+
+            <br />
+
+            <button type="button" onClick={(e)=>this.handleUpload(e)}>Upload</button>
+            </form>
+        </div>
+        )
+    }
+}
