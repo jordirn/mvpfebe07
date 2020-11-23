@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import logo from '../illustration/signup.svg';
 import './pages.css';
 import { Link } from "react-router-dom";
+import logo1 from '../illustration/logoBRI.png';
 
 export default function Registration() {
 
@@ -63,89 +64,94 @@ export default function Registration() {
     return (
         <Fragment>
             <div className="Regis">
-            <div className="row">
-                <div className="col2">
-                    <img src={logo} className="logo" alt="ilustrasi login"/>
-                    <h1 className="heading1">JOIN US!</h1>
-            </div>
-            <div className="col3">
-            <form>
-                <h3 className="heading3">Registration</h3>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputEmail">Email</label>
-                            <input type="email" className="form-control" id="inputEmail" placeholder="Email"
-                            value={email}
-                            onChange={changeEmail}
-                            />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputKTP">No.KTP</label>
-                            <input type="text" className="form-control" id="inputKTP" placeholder="ID Number"
-                            value={ktp}
-                            onChange={changeKtp}
-                            />
-                        </div>
+                <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
+                    <Link to="/complaintpage" className="navbar-brand">
+                        <img src={logo1} id="logoBRI" alt="Login" />
+                    </Link>
+                </nav>
+                <div className="row">
+                    <div className="col2">
+                        <img src={logo} className="logo" alt="ilustrasi login" />
+                        <h1 className="heading1">JOIN US!</h1>
                     </div>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputFullName">Fullname</label>
-                            <input type="text" className="form-control" id="inputFullname" placeholder="Fullname"
-                            value={fullname}
-                            onChange={changeFullname}
-                            />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputNoHP">No.HP</label>
-                            <input type="text" className="form-control" id="inputNoHP" placeholder="Phone Number"
-                            value={phone}
-                            onChange={changePhone}
-                            />
-                        </div>
+                    <div className="col3">
+                        <form>
+                            <h3 className="heading3" id="marginbot">Registration</h3>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputEmail">Email</label>
+                                    <input type="email" className="form-control" id="inputEmail" placeholder="Email"
+                                        value={email}
+                                        onChange={changeEmail}
+                                    />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputKTP">No.KTP</label>
+                                    <input type="text" className="form-control" id="inputKTP" placeholder="ID Number"
+                                        value={ktp}
+                                        onChange={changeKtp}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputFullName">Fullname</label>
+                                    <input type="text" className="form-control" id="inputFullname" placeholder="Fullname"
+                                        value={fullname}
+                                        onChange={changeFullname}
+                                    />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputNoHP">No.HP</label>
+                                    <input type="text" className="form-control" id="inputNoHP" placeholder="Phone Number"
+                                        value={phone}
+                                        onChange={changePhone}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputUsername">Username</label>
+                                    <input type="username" className="form-control" id="inputUsername" placeholder="Username"
+                                        value={username}
+                                        onChange={changeUsername}
+                                    />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputNoRek">No.Rekening</label>
+                                    <input type="text" className="form-control" id="inputNoRek" placeholder="Bank Account Number"
+                                        value={rekening}
+                                        onChange={changeRekening}
+                                    />
+                                </div>
+                            </div>
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputPassword">Password</label>
+                                    <input type="password" className="form-control" id="inputPassword" placeholder="Password"
+                                        value={password}
+                                        onChange={changePassword}
+                                    />
+                                </div>
+                                <div className="button col-md-6">
+                                    <button className="btn btn-primary"
+                                        onClick={klikRegister}
+                                    >Register</button>
+                                    <small className="form-text text-muted">
+                                        Already have an account?
+                                <Link to="/"> Sign in.</Link>
+                                    </small>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputUsername">Username</label>
-                            <input type="username" className="form-control" id="inputUsername" placeholder="Username"
-                            value={username}
-                            onChange={changeUsername}
-                            />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputNoRek">No.Rekening</label>
-                            <input type="text" className="form-control" id="inputNoRek" placeholder="Bank Account Number"
-                            value={rekening}
-                            onChange={changeRekening}
-                            />
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group col-md-6">
-                            <label htmlFor="inputPassword">Password</label>
-                            <input type="password" className="form-control" id="inputPassword" placeholder="Password"
-                            value={password}
-                            onChange={changePassword}
-                            />
-                        </div>
-                        <div className="button col-md-6">
-                            <button className="btn btn-primary"
-                            onClick={klikRegister}
-                            >Register</button>
-                            <small className="form-text text-muted">
-                                Already have an account? 
-                                <Link to ="/"> Sign in.</Link>
-                            </small>
-                        </div>
-                    </div>
-                </form>
-          </div>
-        </div>
+                </div>
                 <footer className="page-footer font-small blue">
                     <div className="footer-copyright text-center py-3">
-                        Copyright © FE-BE 07 2020 
+                        Copyright © FE-BE 07 2020
                     </div>
                 </footer>
-        </div>
+            </div>
         </Fragment>
     )
 }

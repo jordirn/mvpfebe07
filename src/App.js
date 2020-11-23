@@ -11,7 +11,7 @@ import DataCS from './pages/datacs';
 import ListTiketSpv from './pages/listtiketspv';
 import LihatTiket from './pages/lihattiket';
 import ListAkunCs from './pages/listakuncs';
-import DataCS2 from './pages/datacs2';
+// import DataCS2 from './pages/datacs2';
 
 function App () {
  
@@ -28,7 +28,7 @@ function App () {
         <Route path="/listtiketspv" component={ListTiketSpv} />
         <Route path="/lihattiket" component={LihatTiket} />
         <Route path="/listakuncs" component={ListAkunCs} />
-        <Route path="/datacs2" component={DataCS2} />
+        {/* <Route path="/datacs2" component={DataCS2} /> */}
     <div className="App">
      
       <footer className="page-footer font-small blue">

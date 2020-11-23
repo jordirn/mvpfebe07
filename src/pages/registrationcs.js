@@ -10,6 +10,7 @@ const RegistrationCustomerService = () => {
     const [realname, setRealname] = useState('');
     const [fakename, setFakename] = useState('');
     const [password, setPassword] = useState('');
+    const [photo, setPhoto] = useState('');
 
     const changeRealname = (r) => {
         const value = r.target.value
@@ -23,12 +24,17 @@ const RegistrationCustomerService = () => {
         const value = p.target.value
         setPassword(value)
     }
+    const changePhoto = (ph) => {
+        const value = ph.target.value
+        setPhoto(value)
+    }
 
     const klikRegister = () => {
         const data = {
             realname: realname,
             fakename: fakename,
             password: password,
+            photo: photo,
         }
         console.log(data)
         // // axios.post('http://localhost3000/registrationcostumerservice', data)
@@ -39,10 +45,10 @@ const RegistrationCustomerService = () => {
 
     return (
         <Fragment>
-            <div className="Regis">
+            <div className="Regiscs">
                 <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
                     <Link to="/complaintpage" className="navbar-brand">
-                        <img src={logo1} id="logoBRI" alt="Login"></img>
+                        <img src={logo1} id="logoBRI" alt="Login"/>
                     </Link>
                 </nav>
                 <div className="container mt-5">
@@ -53,8 +59,8 @@ const RegistrationCustomerService = () => {
                             </div>
                             <div className="col">
                                 <div className="form-group">
-                                    <h3 className="heading3" id="marginbot">Customer Service Registration</h3>
-                                    <label htmlFor="RealName">Real Name</label>
+                                    <h3 className="heading3">Customer Service Registration</h3>
+                                    <label htmlFor="RealName" id="margintop">Real Name</label>
                                     <input
                                         type="text"
                                         className="form-control"
@@ -88,13 +94,16 @@ const RegistrationCustomerService = () => {
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="File1">Upload Real Photo</label>
-                                    <input type="file" className="form-control-file" id="File1" />
+                                    <input type="file" className="form-control-file" id="File1"
+                                    value={photo}
+                                    onChange={changePhoto}
+                                    />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="File2">Upload Fake Photo</label>
-                                    <input type="file" className="form-control-file" id="File2" />
+                                    <input type="file" className="form-control-file" id="File2"  />
                                 </div>
-                                <a className="btn btn-primary" href="/" onClick={klikRegister}>Register Now</a>
+                                <a className="btn btn-primary" onClick={klikRegister}>Register Now</a>
                             </div>
                         </div>
                     </form>

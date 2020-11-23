@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import logo from '../illustration/signup.svg';
-// import { Link } from "react-router-dom";
+import logo1 from '../illustration/logoBRI.png';
+import { Link } from "react-router-dom";
 
 
 const RegistrationSupervisor = () => {
@@ -37,8 +38,13 @@ const RegistrationSupervisor = () => {
 
     return (
         <Fragment>
-            <div className="Regis">
-                <div className="container">
+            <div className="Regisspv">
+                <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
+                    <Link to="/complaintpage" className="navbar-brand">
+                        <img src={logo1} id="logoBRI" alt="Login"/>
+                    </Link>
+                </nav>
+                <div className="container mt-5">
                     <form style={{ width: "100%" }}>
                         <div className="row">
                             <div className="col1">
@@ -47,7 +53,7 @@ const RegistrationSupervisor = () => {
                             <div className="col">
                                 <div className="form-group">
                                     <h3 className="heading3">Supervisor Registration</h3>
-                                    <label htmlFor="RealName">Real Name</label>
+                                    <label htmlFor="RealName" id="margintop">Real Name</label>
                                     <input
                                         type="text"
                                         className="form-control"

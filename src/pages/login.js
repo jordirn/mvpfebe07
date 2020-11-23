@@ -43,7 +43,7 @@ export default function Login() {
                                     />
 
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <a href="/listtiketspv" type="submit" class="btn btn-primary">Login</a>
                                 <small className="form-text text-muted">
                                     Don't have an account?
                                 <br />

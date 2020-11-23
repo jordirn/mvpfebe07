@@ -1,151 +1,172 @@
-import React, { Fragment, } from "react";
-import './pages.css';
-import logo from '../illustration/login.svg';
-import { Link } from "react-router-dom";
-
-export default function DataCS2() {
+// import React, { Fragment, Component, ImageUpload,} from "react";
+// import './pages.css';
+// import logo from '../illustration/login.svg';
+// import { Link } from "react-router-dom";
 
 
-    // const [email, setEmail] = useState('');
-    // const [ktp, setKtp] = useState('');
-    // const [fullname, setFullname] = useState('');
-    // const [phone, setPhone] = useState('');
-    // const [username, setUsername] = useState('');
-    // const [rekening, setRekening] = useState('');
-    // const [password, setPassword] = useState('');
+// class DataCS2 extends Component {
+//         constructor(props) {
+//           super(props);
+//           this.state = {file: '',imagePreviewUrl: ''};
+//         }
+      
+//         _handleSubmit(e) {
+//           e.preventDefault();
+//           // TODO: do something with -> this.state.file
+//           console.log('handle uploading-', this.state.file);
+//         }
+      
+//         _handleImageChange(e) {
+//           e.preventDefault();
+      
+//           let reader = new FileReader();
+//           let file = e.target.files[0];
+      
+//           reader.onloadend = () => {
+//             this.setState({
+//               file: file,
+//               imagePreviewUrl: reader.result
+//             });
+//           }
+      
+//           reader.readAsDataURL(file)
+//         }
+      
+//         render() {
+//           let {imagePreviewUrl} = this.state;
+//           let $imagePreview = null;
+//           if (imagePreviewUrl) {
+//             $imagePreview = (<img src={imagePreviewUrl} />);
+//           } else {
+//             $imagePreview = (<div className="previewText">Please select an Image for Preview</div>);
+//           }
+      
+//           return (
+//             <div className="previewComponent">
+//               <form onSubmit={(e)=>this._handleSubmit(e)}>
+//                 <input className="fileInput" 
+//                   type="file" 
+//                   onChange={(e)=>this._handleImageChange(e)} />
+//                 <button className="submitButton" 
+//                   type="submit" 
+//                   onClick={(e)=>this._handleSubmit(e)}>Upload Image</button>
+//               </form>
+//               <div className="imgPreview">
+//                 {$imagePreview}
+//               </div>
+//             </div>
+//           )
+//         }
+//       }
+        
+//       ReactDOM.render(<ImageUpload/>, document.getElementById("mainApp"));
 
-    // const changeEmail = (e) => {
-    //     const value = e.target.value
-    //     setEmail(value)
-    // }
-    // const changeKtp = (k) => {
-    //     const value = k.target.value
-    //     setKtp(value)
-    // }
-    // const changeFullname = (f) => {
-    //     const value = f.target.value
-    //     setFullname(value)
-    // }
-    // const changePhone = (ph) => {
-    //     const value = ph.target.value
-    //     setPhone(value)
-    // }
-    // const changeUsername = (u) => {
-    //     const value = u.target.value
-    //     setUsername(value)
-    // }
-    // const changeRekening = (r) => {
-    //     const value = r.target.value
-    //     setRekening(value)
-    // }
-    // const changePassword = (pw) => {
-    //     const value = pw.target.value
-    //     setPassword(value)
-    // }
+//   export default DataCS2;
 
-    // const klikRegister = () => {
-    //     const data = {
-    //         email: email,
-    //         ktp: ktp,
-    //         fullname: fullname,
-    //         phone: phone,
-    //         username: username,
-    //         rekening: rekening,
-    //         password: password,
-    //     }
-    //     console.log(data)
-    //     // // axios.post('http://localhost3000/registrationcostumerservice', data)
-    //     // .then(result =>{
-    //     //     console.log(result)
-    //     // })
-    // }
 
-    return (
-        <Fragment>
-            <div className="datacs">
-                <div className="container">
-                    <div className="row">
-                        <div className="card-group">
-                            <div className="card-text-center">
-                                <ul className="list-group list-group-flush">
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="ID Customer Service"
-                                        />
-                                    </li>
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="Nama Customer Service"
-                                        />
-                                    </li>
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="Status"
-                                        />
-                                    </li>
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="Rating"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="card-group">
-                                <ul className="list-group list-group-flush">
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value=""
-                                        />
-                                    </li>
-                                    <li className="list-group-item">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                        />
-                                    </li>
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="Active/Non-Active"
-                                        />
-                                    </li>
-                                    <li className="list-group-item disabled">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            value="Rating"
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
+// // export default function DataCS2() {
 
-                            <div className="col7">
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">Foto Profile</h5>
-                                    <img src={logo} width="300px" />
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container">
-                    <input class="btn btn-success" type="button" value="Active" />
-                    <input class="btn btn-danger" type="button" value="Non-Active" />
-                    <input class="btn btn-dark" type="button" value="Delete Account" />
-                    <input class="btn btn-primary" type="submit" value="Save" />
-                </div>
-            </div>
-        </Fragment>
-    )
-}
+// //     // const [realname, setRealname] = useState('');
+// //     // const [fakename, setFakename] = useState('');
+// //     // const [password, setPassword] = useState('');
+// //     // const [photo, setPhoto] = useState('');
+
+// //     // const changeRealname = (r) => {
+// //     //     const value = r.target.value
+// //     //     setRealname(value)
+// //     // }
+// //     // const changeFakename = (f) => {
+// //     //     const value = f.target.value
+// //     //     setFakename(value)
+// //     // }
+// //     // const changePassword = (p) => {
+// //     //     const value = p.target.value
+// //     //     setPassword(value)
+// //     // }
+// //     // const changePhoto = (ph) => {
+// //     //     const value = ph.target.value
+// //     //     setPhoto(value)
+// //     // }
+
+// //     // const klikRegister = () => {
+// //     //     const data = {
+// //     //         realname: realname,
+// //     //         fakename: fakename,
+// //     //         password: password,
+// //     //         photo: photo,
+// //     //     }
+// //     //     console.log(data)
+// //     //     // // axios.post('http://localhost3000/registrationcostumerservice', data)
+// //     //     // .then(result =>{
+// //     //     //     console.log(result)
+// //     //     // })
+// //     // }
+
+// //     return (
+// //         <Fragment>
+// //             <div className="Regiscs">
+// //                 <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
+// //                     <Link to="/complaintpage" className="navbar-brand">
+// //                         {/* <img src={logo1} id="logoBRI" alt="Login"/> */}
+// //                     </Link>
+// //                 </nav>
+// //                 <div className="container mt-5">
+// //                     <form style={{ width: "100%" }}>
+// //                         <div className="row">
+// //                             <div className="col1">
+// //                                 <img src={logo} alt="ilustrasi login" id="imgregiscs" />
+// //                             </div>
+// //                             <div className="col">
+// //                                 {/* <div className="form-group">
+// //                                     <h3 className="heading3">Customer Service Registration</h3>
+// //                                     <label htmlFor="RealName" id="margintop">Real Name</label>
+// //                                     <input
+// //                                         type="text"
+// //                                         className="form-control"
+// //                                         id="RealName"
+// //                                         placeholder="Enter Real Name"
+// //                                         value={realname}
+// //                                         onChange={changeRealname}
+// //                                     />
+// //                                 </div>
+// //                                 <div className="form-group">
+// //                                     <label htmlFor="FakeName">Fake Name</label>
+// //                                     <input
+// //                                         type="text"
+// //                                         className="form-control"
+// //                                         id="FakeName"
+// //                                         placeholder="Enter Fake Name"
+// //                                         value={fakename}
+// //                                         onChange={changeFakename}
+// //                                     />
+// //                                 </div>
+// //                                 <div className="form-group">
+// //                                     <label htmlFor="Password">Password</label>
+// //                                     <input
+// //                                         type="password"
+// //                                         className="form-control"
+// //                                         id="Password"
+// //                                         placeholder="Enter Password"
+// //                                         value={password}
+// //                                         onChange={changePassword}
+// //                                     />
+// //                                 </div> */}
+// //                                 <div className="form-group">
+// //                                     <label htmlFor="File1">Upload Real Photo</label>
+// //                                     <input type="file" className="form-control-file" id="File1"
+                                   
+// //                                     />
+// //                                 </div>
+// //                                 <div className="form-group">
+// //                                     <label htmlFor="File2">Upload Fake Photo</label>
+// //                                     <input type="file" className="form-control-file" id="File2"  />
+// //                                 </div>
+// //                                 {/* <a className="btn btn-primary" onClick={klikRegister}>Register Now</a> */}
+// //                             </div>
+// //                         </div>
+// //                     </form>
+// //                 </div>
+// //             </div>
+// //         </Fragment>
+// //     )
+// // }
