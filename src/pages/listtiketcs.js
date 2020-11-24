@@ -2,17 +2,15 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import logo from '../illustration/logoBRI.png';
 
-export default function ListTiketSpv() {
+export default function ListTiketCs() {
   return (
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
           <img src={logo} id="logoBRI" alt="Login"></img>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav" id="marginleft">
-            <Link to="/listtiketspv" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
+            <Link to="/listtiketcs" className="nav-item nav-link active">Home</Link>
             <Link to="" className="nav-item nav-link">History</Link>
-            <Link to="/listakuncs" className="nav-item nav-link">Account CS</Link>
-            <Link to="/registrationcs" className="nav-item nav-link">Regist CS</Link>
             <Link to="/" className="nav-item nav-link">Logout</Link>
           </div>
         </div>
@@ -75,7 +73,7 @@ export default function ListTiketSpv() {
                   <td>111</td>
                   <td>On Progress</td>
                   <td>27/11/2020 16:32</td>
-                  <td><Link to="/lihattiketspv" type="button" class="btn btn-secondary">Open</Link>
+                  <td><Link to="/lihattiket" type="button" class="btn btn-secondary">Open</Link>
                   </td>
                 </tr>
                 <tr>
@@ -83,7 +81,7 @@ export default function ListTiketSpv() {
                   <td>112</td>
                   <td>On Progress</td>
                   <td>27/11/2020 16:32</td>
-                  <td><Link to="/lihattiketspv" type="button" class="btn btn-secondary">Open</Link>
+                  <td><button type="button" class="btn btn-secondary">Open</button>
                   </td>
                 </tr>
                 <tr>

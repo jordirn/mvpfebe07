@@ -40,9 +40,8 @@ const RegistrationSupervisor = () => {
         <Fragment>
             <div className="Regisspv">
                 <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
-                    <Link to="/complaintpage" className="navbar-brand">
                         <img src={logo1} id="logoBRI" alt="Login"/>
-                    </Link>
+                        <Link to="/" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
                 </nav>
                 <div className="container mt-5">
                     <form style={{ width: "100%" }}>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import RatingCustomerToCS from './popup';
 import logo1 from '../illustration/logoBRI.png';
 
-export default function LihatTiket() {
+export default function LihatTiketSpv() {
 
     const [id, setId] = useState('');
     const [problem, setProblem] = useState('');
@@ -40,7 +40,7 @@ export default function LihatTiket() {
                     <img src={logo1} id="logoBRI" alt="Login"></img>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav" id="marginleft">
-                        <Link to="/listtiketcs" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
+                        <Link to="/listtiketspv" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
                         <Link to="" className="nav-item nav-link">History</Link>
                     </div>
                 </div>

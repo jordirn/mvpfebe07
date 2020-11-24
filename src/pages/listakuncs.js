@@ -11,9 +11,10 @@ export default function ListAkunCs() {
         </Link>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav" id="marginleft">
-            <Link to="/listtiketspv" className="nav-item nav-link active">Home <span className="sr-only">(current)</span></Link>
+            <Link to="/listtiketcs" className="nav-item nav-link ">Home</Link>
             <Link to="" className="nav-item nav-link">History</Link>
-            <Link to="" className="nav-item nav-link">Regist CS</Link>
+            <Link to="/listakuncs" className="nav-item nav-link active">Account CS</Link>
+            <Link to="/registrationcs" className="nav-item nav-link">Regist CS</Link>
             <Link to="/" className="nav-item nav-link">Logout</Link>
           </div>
         </div>

@@ -12,6 +12,10 @@ import DataCS from './pages/datacs';
 import ListTiketSpv from './pages/listtiketspv';
 import LihatTiket from './pages/lihattiket';
 import ListAkunCs from './pages/listakuncs';
+import LoginCs from './pages/logincs';
+import ListTiketCs from './pages/listtiketcs';
+import LoginSpv from './pages/loginspv';
+import LihatTiketSpv from './pages/lihattiketspv';
 // import DataCS2 from './pages/datacs2';
 
 function App () {
@@ -29,6 +33,10 @@ function App () {
         <Route path="/listtiketspv" component={ListTiketSpv} />
         <Route path="/lihattiket" component={LihatTiket} />
         <Route path="/listakuncs" component={ListAkunCs} />
+        <Route path="/logincs" component={LoginCs} />
+        <Route path="/loginspv" component={LoginSpv} />
+        <Route path="/listtiketcs" component={ListTiketCs} />
+        <Route path="/lihattiketspv" component={LihatTiketSpv} />
         {/* <Route path="/datacs2" component={DataCS2} /> */}
     <div className="App">
      

@@ -47,9 +47,16 @@ const RegistrationCustomerService = () => {
         <Fragment>
             <div className="Regiscs">
                 <nav className="navbar navbar-expand-lg navbar-dark" id="Navbar">
-                    <Link to="/complaintpage" className="navbar-brand">
-                        <img src={logo1} id="logoBRI" alt="Login"/>
-                    </Link>
+                    <img src={logo1} id="logoBRI" alt="Login" />
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav" id="marginleft">
+                    <Link to="/listtiketcs" className="nav-item nav-link ">Home</Link>
+                    <Link to="" className="nav-item nav-link">History</Link>
+                    <Link to="/listakuncs" className="nav-item nav-link ">Account CS</Link>
+                    <Link to="/registrationcs" className="nav-item nav-link active">Regist CS</Link>
+                    <Link to="/" className="nav-item nav-link">Logout</Link>
+                    </div>
+                </div>
                 </nav>
                 <div className="container mt-5">
                     <form style={{ width: "100%" }}>
@@ -95,13 +102,13 @@ const RegistrationCustomerService = () => {
                                 <div className="form-group">
                                     <label htmlFor="File1">Upload Real Photo</label>
                                     <input type="file" className="form-control-file" id="File1"
-                                    value={photo}
-                                    onChange={changePhoto}
+                                        value={photo}
+                                        onChange={changePhoto}
                                     />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="File2">Upload Fake Photo</label>
-                                    <input type="file" className="form-control-file" id="File2"  />
+                                    <input type="file" className="form-control-file" id="File2" />
                                 </div>
                                 <a className="btn btn-primary" onClick={klikRegister}>Register Now</a>
                             </div>
